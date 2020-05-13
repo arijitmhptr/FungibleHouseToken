@@ -1,4 +1,4 @@
-package com.template;
+package com.template.contracts;
 
 import com.r3.corda.lib.tokens.contracts.EvolvableTokenContract;
 import net.corda.core.contracts.Contract;
@@ -7,7 +7,7 @@ import net.corda.core.transactions.LedgerTransaction;
 /**
  * This doesn't do anything over and above the [EvolvableTokenContract].
  */
-public class ExampleEvolvableTokenTypeContract extends EvolvableTokenContract implements Contract {
+public class HouseTokenContract extends EvolvableTokenContract implements Contract {
 
     @Override
     public void additionalCreateChecks(LedgerTransaction tx) {
